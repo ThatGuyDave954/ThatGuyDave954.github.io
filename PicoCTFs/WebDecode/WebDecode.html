@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>WebDecode walkthrough</title>
+</head>
+<body>
+
+    <h1> In todays lesson we are going to walk through the CTF for WebDecode on PicoCtf.org</h1>
+
+    <div>
+        <p>In the desciption it gives us a hint to use the web inspector tool</p>
+        <p>After reviewing the first page by right clicking and utilizing the '"view page source"' I was able to navigate through different html paths.</p>
+        <br>
+        <p>In the about.html file I was able to locate what appears to be a base64 encoded string.</p>
+        <img alt="screenshot" src="PicoCTFs/WebDecode/About.html.png">
+        <p>Once I took this code and input it into a base64 decoder I was able to locate the flag</p>
+    </div>
+
+## summary
+<div>
+In this example, we successfully navigated through the web browser's source code to identify a potential security risk when publishing a website publicly. Despite the data being encoded, we promptly decoded valuable information.
+</div>
+## Flag
+
+<details><summary>Show flag</summary>
+
+```
+picoCTF{web_succ3ssfully_d3c0ded_02cdcb59}
+```
+
+
+</body>
+</html>
